@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+header {
+    border: 2px green solid;
+
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  font-family: 'Monaco';
+  text-align: center;
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-body {
+    border: 2px black solid;
+    height: 80vh;
+    width: 40vw;
+    align-self: center;
+    margin-top: 20px;
+    background-color:white;
+
+}
+
+/*NUMBER DISPLAY*/
+
+.num-display {
+    /* border: 2px red solid; */
+
+    height: 15vh;
+    font-size: 75px;
+    font-family: 'Zen Dots', cursive;
+    text-align: right;
+}
+
+.num{
+    position: relative;
+    top: 15px;
+    right: 5px;
+    /* border: 2px green solid; */
+}
+
+/*KEYPAD AREA*/
+.keypad {
+    /* border: 2px blue solid; */
+    height: 64vh;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+button{
+    border-radius: 40%;
+    background-color: #daf4f8;
+    
+    /* width: 25%;
+    height: 100% */
+}
+
+button:hover{
+    font-size: 125%;
+    box-shadow: teal;
+    background-color: grey;
+}
+
+.first-row {
+    /* border: 2px blue solid; */
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.second-row {
+    /* border: 2px blue solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.third-row {
+    /* border: 2px blue solid; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.fourth-row {
+    /* border: 2px blue solid; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 2px 5px 2px 5px;
+}
+
+.fifth-row {
+    /* border: 2px blue solid; */
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: 5px;
+    padding: 2px 5px 2px 5px;
+
+}
