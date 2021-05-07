@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 header {
-    border: 2px green solid;
+    /* border: 2px green solid; */
 
     font-size: 50px;
     font-family: 'Quicksand', sans-serif;
@@ -22,6 +22,7 @@ body {
 
 .calculator-body {
     border: 2px black solid;
+
     height: 80vh;
     width: 40vw;
     align-self: center;
@@ -35,23 +36,35 @@ body {
 .num-display {
     /* border: 2px red solid; */
 
-    height: 15vh;
+    height: 13vh;
     font-size: 75px;
     font-family: 'Zen Dots', cursive;
     text-align: right;
+
+    background-color: white;
+    border: 10px black solid;
 }
 
-.num{
+.num {
+    /* border: 2px red solid; */
+    /* display: table;
+    white-space: nowrap;
+    width: 98%; */
+    /* display: block; */
+    height: 100%;
+    width: 98%;
+    overflow: auto;
+
     position: relative;
-    top: 15px;
-    right: 5px;
-    /* border: 2px green solid; */
+    bottom: 2px;
+    
 }
 
 /*KEYPAD AREA*/
 .keypad {
     /* border: 2px blue solid; */
     height: 64vh;
+    position: relative;
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -115,4 +128,14 @@ button:hover{
     column-gap: 5px;
     padding: 2px 5px 2px 5px;
 
+}
+
+.message {
+    text-align: center;
+    position:relative;
+    top: 10px;
+
+    font-size:large;
+    font-family: 'Zen Dots';
+    color: red;
 }

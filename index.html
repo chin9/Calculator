@@ -8,13 +8,13 @@
 
 <body>
 
-    <div class="calculator-body">
+    <div class="calculator-body" id='calculator'>
 
-        <div class="num-display">
-            <span class="num" id="number">1.23</span>
+        <div class="num-display" id='number-display'>
+            <div class="num" id="number">0</div>
         </div>
 
-        <div class="keypad">
+        <div class="keypad" id='keypad-container'>
 
             <!--FIRST ROW-->
             <div class="first-row">
@@ -51,12 +51,16 @@
             <div class="fifth-row">
                 <button id="0">0</button>
                 <button id="dot">.</button>
-                <button id="minus">=</button>    
+                <button id="equal">=</button>    
             </div>
 
 
         </div>
 
+    </div>
+
+    <div class="message" id="message">
+        
     </div>
 
 </body>

@@ -232,7 +232,15 @@ function calculateNewNum(currentNum) {
         case 'minus': return prevValue - currentNum;
         case 'multiply': return prevValue * currentNum;
         case 'divide': return prevValue / currentNum;
-    }
+    //     case 'divide': {
+    //         if (Number(currentNum) == 0) {
+    //             document.getElementById('message').textContent = 
+    //             'Are you sure about that?'
+    //             return 0;
+    //         } else {
+    //             return prevValue / currentNum;
+    //         }
+    // }
 }
 
 const plusButton = document.getElementById('plus');
@@ -296,4 +304,4 @@ equalButton.addEventListener('click', function() {
 
 
 
-
+}
