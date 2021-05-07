@@ -225,11 +225,7 @@ dotButton.addEventListener('click', function() {
 
 function performDivision(currentNum) {
     if (currentNum == 0) {
-        document.getElementById('message').textContent = 
-        'Division by a zero? Are you sure about that?'
-        setTimeout(function() {
-            document.getElementById('message').textContent = '';
-        }, 5000);
+        document.getElementById('message').textContent = 'Are you sure about that?'
         return 0;
     } else {
         return prevValue / currentNum;
